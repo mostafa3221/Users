@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import '../styles/UserDetails.css';
+import Nav from "../components/Nav";
 const UserDetails = () => {
   const { id } = useParams();
   const [user, setUser] = useState(null); // Initialize with null to handle loading state
@@ -17,6 +18,8 @@ const UserDetails = () => {
   }
 
   return (
+    <>
+    <Nav/>
     <div className="user-details-container container">
       <h2>{user.name}</h2>
       <p>
@@ -32,6 +35,7 @@ const UserDetails = () => {
         <strong>Company:</strong> {user.company?.name}
       </p>
     </div>
+    </>
   );
 };
 

@@ -3,10 +3,10 @@ import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-import User from "./pages/user";
 import "./styles/Nav.css";
 import { Route, Routes } from "react-router-dom";
 import UserDetails from "./pages/UserDetails";
+import User from "./pages/User";
 
 function App() {
   const [count, setCount] = useState(0);
