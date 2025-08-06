@@ -1,0 +1,52 @@
+/* === Users List Styles === */
+.users-list-container {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.users-list-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  text-align: center;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 1rem;
+}
+
+.users-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.user-list-item {
+  background: #f9f9f9;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-list-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.user-list-item a {
+  display: block;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #34495e;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.user-list-item a:hover {
+  color: #3498db;
+}
